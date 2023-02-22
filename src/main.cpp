@@ -10,12 +10,10 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+#include <iostream>
 #include <cstdlib>
-#include <iostream>
-#include <string.h>
-
-#include <iostream>
 #include "cg_trackball.h"
+#include <string>
 
 
 // Struct for our application context
@@ -137,7 +135,7 @@ void shutdown(Context ctx)
     std::exit(EXIT_SUCCESS);
 }
 
-int main(int argc, char** argv)
+int main()
 {
     std::cout   << "Starting " << PROJECT_NAME << "...\n"
                 << "Version: " << PROJECT_VERSION_MAJOR << "." << PROJECT_VERSION_MINOR
@@ -146,6 +144,7 @@ int main(int argc, char** argv)
     // init window and context
     Context ctx = init();
 
+    // Setup
     while (!glfwWindowShouldClose(ctx.window))
     {
         glfwPollEvents();

@@ -101,6 +101,7 @@ add_executable(
     ${SOURCE}/main.cpp
     ${SOURCE}/base.cpp
     ${SOURCE}/cg_trackball.cpp
+    ${SOURCE}/attribute.cpp
 )
 
 # Set main target include directories
